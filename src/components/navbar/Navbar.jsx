@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 import logo from "../../logo.svg";
 import "./navbar.css";
 
@@ -27,10 +28,12 @@ const Navbar = () => {
           </p>
         </div>
       </div>
-      {/* <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
-      </div> */}
+      <div className="gpt3__navbar-sign">
+        <NavLink to={"/NFT"} type="button" className="gpt3__navbar-sign">
+          NFTs
+        </NavLink>
+        {/* <button type="button">NFTs</button> */}
+      </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine

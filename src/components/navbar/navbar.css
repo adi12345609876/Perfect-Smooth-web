@@ -50,7 +50,19 @@
     cursor: pointer;
 }
 
-.gpt3__navbar-sign button,
+.gpt3__navbar-sign{
+        padding: 0.3rem 1rem;
+        color: #fff;
+        background: #FF4820;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
 .gpt3__navbar-menu_container button {
     padding: 0.5rem 1rem;
     color: #fff;
