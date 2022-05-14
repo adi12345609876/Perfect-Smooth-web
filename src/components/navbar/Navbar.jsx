@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { NavLink } from "react-router-dom";
 import logo from "../../logo.svg";
 import "./navbar.css";
 
@@ -29,10 +28,15 @@ const Navbar = () => {
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <NavLink to={"/NFT"} type="button" className="gpt3__navbar-sign">
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "https://www.perfectnft.tk/";
+          }}
+        >
           NFTs
-        </NavLink>
-        {/* <button type="button">NFTs</button> */}
+        </button>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
@@ -68,13 +72,15 @@ const Navbar = () => {
               </p> */}
             </div>
             <div className="gpt3__navbar-menu_container-links-sign">
-              <NavLink
-                to={"/NFT"}
+              <button
                 type="button"
-                className="gpt3__navbar-menu_container-links-sign"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "https://www.perfectnft.tk/";
+                }}
               >
-                NFTs
-              </NavLink>
+                NFT
+              </button>
             </div>
           </div>
         )}
