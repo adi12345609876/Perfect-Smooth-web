@@ -9,7 +9,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/NFT" element={<NFTApp />} />
+      <Route path="/NFT" element={<NFTApp />} index />
     </Routes>
   </BrowserRouter>
 );
