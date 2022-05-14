@@ -68,8 +68,13 @@ const Navbar = () => {
               </p> */}
             </div>
             <div className="gpt3__navbar-menu_container-links-sign">
-              <p>Sign in</p>
-              <button type="button">Sign up</button>
+              <NavLink
+                to={"/NFT"}
+                type="button"
+                className="gpt3__navbar-menu_container-links-sign"
+              >
+                NFTs
+              </NavLink>
             </div>
           </div>
         )}
